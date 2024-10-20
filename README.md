@@ -68,7 +68,7 @@ This Python script allows you to automatically submit responses to a Google Form
       | macOS | <kbd>cmd</kbd><kbd>f</kbd> |
       | Windows | <kbd>ctrl</kbd><kbd>f</kbd> |
       | Linux | <kbd>ctrl</kbd><kbd>f</kbd> |
-   4. Type in:
+   4. Type in
    ```
    entry.
    ```
