@@ -2,7 +2,7 @@
 
 This Python script allows you to automatically submit responses to a Google Form. The script reads the Google Form ID and response data from a text file, enabling efficient and repeatable submissions.
 
-README in VietNamese find that here: READMEvn.md
+README in VietNamese find that [here](GOOGLE-FORM-AUTO/READMEvn.md)
 ## Features
 
 - Reads form data from a specified text file.
