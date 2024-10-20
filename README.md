@@ -44,6 +44,41 @@ This Python script allows you to automatically submit responses to a Google Form
    ...
    ```
 
+   **How to collect the `form_id`:**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/67e2985e-358f-4509-b46a-0950df23076c" alt="form_id" width="700"/>
+</p> 
+
+   The value above the red lines means `form_id`. Complete Goolge Form links is `https://docs.google.com/forms/d/form_id/formResponse`
+   
+   **How to collect the `entry.value`:**
+   1. Press `Ctrl + Shift + I` to open the Developer Tools. This will bring up the console where you can enter custom scripts.
+
+      | Operating System | Keys |
+      | :----------------: | :----: |
+      | macOS | <kbd>alt</kbd><kbd>cmd</kbd><kbd>i</kbd> |
+      | Windows | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> |
+      | Linux | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> |
+
+   2. Visit the `Elements` (Near the `Console`)
+   3. Press `Ctrl + F` to open the Find tools
+   
+      | Operating System | Keys |
+      | :----------------: | :----: |
+      | macOS | <kbd>cmd</kbd><kbd>f</kbd> |
+      | Windows | <kbd>ctrl</kbd><kbd>f</kbd> |
+      | Linux | <kbd>ctrl</kbd><kbd>f</kbd> |
+   4. Type in:
+   ```
+   entry.
+   ```
+   ![image](https://github.com/user-attachments/assets/f675d419-1a88-46be-9597-f1ab246a3d72)
+
+   5. Find the `entry_id` for each question (Which means `names:`) and the `response` in `form_data.txt` (Which means `values`) in each response answer
+   <p align="center">
+   <img src="https://github.com/user-attachments/assets/547eacde-bb6b-48c3-98a4-2a7029e810a3" alt="entry" width="500"/>
+   </p>
+   
    **Example content of `form_data.txt`:**
 
    ```
@@ -52,8 +87,7 @@ This Python script allows you to automatically submit responses to a Google Form
    entry.1101225596: 4
    entry.634083696: 4
    ```
-
-2. **Run the Script:**
+3. **Run the Script:**
 
    Execute the script using Python:
 
@@ -61,7 +95,7 @@ This Python script allows you to automatically submit responses to a Google Form
    python main.py
    ```
 
-3. **Input Number of Submissions:**
+4. **Input Number of Submissions:**
 
    When prompted, enter the number of times you wish to submit the form.
 
@@ -77,11 +111,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - [Requests Documentation](https://docs.python-requests.org/en/latest/) for the HTTP library.
-```
-
-### Customization:
-- Replace `your_username` in the clone URL with your actual GitHub username or repository link.
-- Add any additional features or instructions specific to your script as necessary.
-- You might also want to include a section for troubleshooting common issues or examples of how to format the input text file.
-
-Feel free to ask if you need further modifications or assistance!
